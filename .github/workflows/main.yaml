@@ -1,0 +1,23 @@
+# Your workflow name
+name: Deploy to pythoanywhere
+
+#Run workflow on every push to main branch
+on:
+  push:
+    branches: [main]
+
+# Your workflows jobs.
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      #Check-out your repository
+      - name: Checkout
+        uses: actions/checkout@v2
+
+### ! IMPORTANT PART ! ###
+      - name: Build, Push and Release a Docker container to Heroku
+        uses: gonuit/heroku-docker-deploy@v1.3.3 # Github action name 
+        with:
+          # Below you must provide variables for your Heroku app
+          

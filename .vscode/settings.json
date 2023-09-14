@@ -1,0 +1,24 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "rs.eu-central-1.dwh.sagedata.co",
+            "port": 5439,
+            "askForPassword": true,
+            "driver": "Redshift Driver (Dedicated ver)",
+            "name": "RS__OOODLES",
+            "database": "sd__47e5d457_5f20_437e_85f6_0e510fc32ec6",
+            "username": "lichia_ooodles_8673"
+        },
+        {
+            "previewLimit": 50,
+            "server": "3.127.26.196",
+            "port": 5439,
+            "askForPassword": true,
+            "driver": "Redshift Driver (Dedicated ver)",
+            "name": "dwh_ooodles",
+            "database": "dev",
+            "username": "lichia_ooodles_8673"
+        }
+    ]
+}
